@@ -1,0 +1,41 @@
+{
+  "name": "pavii-backend-node-express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "build": "tsc",
+    "dev": "tsc-watch --onSuccess \"node dist/index.js\" "
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-autosanitizer": "^1.0.1",
+    "helmet": "^3.23.3",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.10.0",
+    "negotiator": "^0.6.2",
+    "node-pre-gyp": "^0.15.0",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "pg": "^8.3.0",
+    "validate.js": "^0.13.1"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^3.0.0",
+    "@types/cors": "^2.8.6",
+    "@types/express": "^4.17.7",
+    "@types/jsonwebtoken": "^8.5.0",
+    "@types/morgan": "^1.9.1",
+    "@types/passport": "^1.0.4",
+    "@types/passport-jwt": "^3.0.3",
+    "@types/pg": "^7.14.4",
+    "tsc-watch": "^4.2.9",
+    "typescript": "^3.9.7"
+  },
+  "keywords": []
+}
