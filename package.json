@@ -3,14 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "engines": {
-    "node": "12.x",
-    "npm": "6.x"
-  },
   "scripts": {
-    "start": "node dist/index.js",
-    "build": "tsc",
-    "dev": "tsc-watch --onSuccess \"node dist/index.js\" "
+    "build": "babel src --out-dir dist --extensions '.ts' --source-maps",
+    "start": "nodemon --exec babel-node src/index.ts --extensions '.ts'"
   },
   "author": "",
   "license": "ISC",
@@ -30,6 +25,12 @@
     "validate.js": "^0.13.1"
   },
   "devDependencies": {
+    "@babel/cli": "7.4.4",
+    "@babel/core": "7.4.5",
+    "@babel/node": "7.4.5",
+    "@babel/preset-env": "7.4.5",
+    "@babel/preset-typescript": "7.3.3",
+    "babel-plugin-module-resolver": "3.2.0",
     "@types/bcrypt": "^3.0.0",
     "@types/cors": "^2.8.6",
     "@types/express": "^4.17.7",
